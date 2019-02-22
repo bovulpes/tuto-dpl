@@ -22,5 +22,5 @@ O2/Detectors/ITSMFT/MFT/testwf/src/mft-test-workflow.cxx
 Build and run:
 
 ```bash
-mft-test-workflow
+mft-test-workflow -b
 ```

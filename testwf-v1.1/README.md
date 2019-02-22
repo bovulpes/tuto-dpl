@@ -23,5 +23,5 @@ O2/Detectors/ITSMFT/MFT/testwf/src/DigitReaderSpec.cxx
 Build and run:
 
 ```bash
-mft-test-workflow
+mft-test-workflow -b
 ```
