@@ -26,7 +26,7 @@
 
 #endif
 
-void CheckTopologies(std::string clusfile = "o2clus_its.root", std::string hitfile = "o2sim.root", std::string inputGeom = "O2geometry.root")
+void CheckTopologies(std::string clusfile = "itsclusters.root", std::string hitfile = "o2sim.root", std::string inputGeom = "O2geometry.root")
 {
   using namespace o2::Base;
   using namespace o2::ITS;

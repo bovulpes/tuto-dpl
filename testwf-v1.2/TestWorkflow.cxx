@@ -29,7 +29,6 @@ framework::WorkflowSpec getWorkflow()
 
   specs.emplace_back(o2::MFT::getDigitReaderSpec());
   specs.emplace_back(o2::MFT::getDigitDigestSpec());
-  //specs.emplace_back(o2::MFT::getDigestWriterSpec());
 
   return specs;
 }

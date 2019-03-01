@@ -54,8 +54,10 @@ void ClustererDPL::init(InitContext& ic)
     LOG(INFO) << "MFTClusterer running with a provided dictionary: " << filename.c_str();
     mState = 1;
   } else {
-    LOG(WARNING) << "Cannot open the " << filename.c_str() << " file !";
-    mState = 0;
+    LOG(INFO) << "MFTClusterer running without a dictionary";
+    mState = 1;
+    //LOG(WARNING) << "Cannot open the " << filename.c_str() << " file !";
+    //mState = 0;
   }
 
   mClusterer->print();

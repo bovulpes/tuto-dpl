@@ -21,7 +21,7 @@
 // Use of topology dictionary: flag withDicitonary -> true
 // A dictionary must be generated with the macro CheckTopologies.C
 
-void run_clus_mftSA(std::string outputfile = "o2clus.root", std::string inputfile = "mftdigits.root", bool raw = false, bool withDictionary = false, std::string dictionaryfile = "complete_dictionary.bin")
+void run_clus_mftSA(std::string outputfile = "mftclusters.root", std::string inputfile = "mftdigits.root", bool raw = false, bool withDictionary = false, std::string dictionaryfile = "complete_dictionary.bin")
 {
   // Initialize logger
   FairLogger* logger = FairLogger::GetLogger();

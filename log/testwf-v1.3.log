@@ -1,0 +1,320 @@
+[INFO] MFT workflow test option 1 = -9999
+[INFO] Using port range [21999, 22999]
+[INFO] Initialising O2 Data Processing Layer
+[INFO] O2 Data Processing Layer initialised. We brake for nobody.
+[INFO] Redeployment of configuration asked.
+Starting mft-digit-reader on pid 29604
+Starting mft-digit-digest on pid 29605
+Starting mft-digest-writer on pid 29606
+Starting dpl-global-binary-file-sink on pid 29607
+[INFO] Redeployment of configuration done.
+[29604]: [INFO] MFT workflow test option 1 = -9999
+[29605]: [INFO] MFT workflow test option 1 = -9999
+[29604]: [WARN] Could not create GUI. Switching to batch mode. Do you have GLFW on your system?
+[29604]: [INFO] Spawing new device mft-digit-reader in process with pid 29604
+[29605]: [WARN] Could not create GUI. Switching to batch mode. Do you have GLFW on your system?
+[29605]: [INFO] Spawing new device mft-digit-digest in process with pid 29605
+[29604]: [14:04:47][INFO] Configuration: 
+[29604]: catch-signals                                                              = 1                                                                                                    <int>            [default] 
+[29604]: channel-config                                                             = name=from_mft-digit-reader_to_mft-digit-digest,type=push,method=bind,address=tcp://*:22000,rateLogging=60  name=from_mft-digit-reader_to_dpl-global-binary-file-sink,type=push,method=bind,address=tcp://*:22001,rateLogging=60   <vector<string>> [provided]
+[29604]: chans.from_mft-digit-reader_to_dpl-global-binary-file-sink.0.address       = tcp://*:22001                                                                                        <string>         [provided]
+[29604]: chans.from_mft-digit-reader_to_dpl-global-binary-file-sink.0.autoBind      = 1                                                                                                    <bool>           [provided]
+[29604]: chans.from_mft-digit-reader_to_dpl-global-infoLoggerD not available, falling back to stdout logging
+[29605]: [14:04:47][INFO] Configuration: 
+[29605]: catch-signals                                                    = 1                                                                                                    <int>            [default] 
+[29605]: channel-config                                                   = name=from_mft-digit-digest_to_mft-digest-writer,type=push,method=bind,address=tcp://*:22002,rateLogging=60  name=from_mft-digit-reader_to_mft-digit-digest,type=pull,method=connect,address=tcp://127.0.0.1:22000,rateLogging=60   <vector<string>> [provided]
+[29605]: chans.from_mft-digit-digest_to_mft-digest-writer.0.address       = tcp://*:22002                                                                                        <string>         [provided]
+[29605]: chans.from_mft-digit-digest_to_mft-digest-writer.0.autoBind      = 1                                                                                                    <bool>           [provided]
+[29605]: chans.from_mft-digit-digest_to_mft-digest-writer.0.linger        = 500           infoLoggerD not available, falling back to stdout logging
+[29606]: [INFO] MFT workflow test option 1 = -9999
+[29607]: [INFO] MFT workflow test option 1 = -9999
+[29604]: binary-file-sink.0.linger        = 500                                                                                                  <int>            [provided]
+[29604]: chans.from_mft-digit-reader_to_dpl-global-binary-file-sink.0.method        = bind                                                                                                 <string>         [provided]
+[29604]: chans.from_mft-digit-reader_to_dpl-global-binary-file-sink.0.portRangeMax  = 23000                                                                                                <int>            [provided]
+[29604]: chans.from_mft-digit-reader_to_dpl-global-binary-file-sink.0.portRangeMin  = 22000                                                                                                <int>            [provided]
+[29604]: chans.from_mft-digit-reader_to_dpl-global-binary-file-sink.0.rateLogging   = 60                                                                                                   <int>            [provided]
+[29605]:                                                                                        <int>            [provided]
+[29605]: chans.from_mft-digit-digest_to_mft-digest-writer.0.method        = bind                                                                                                 <string>         [provided]
+[29605]: chans.from_mft-digit-digest_to_mft-digest-writer.0.portRangeMax  = 23000                                                                                                <int>            [provided]
+[29605]: chans.from_mft-digit-digest_to_mft-digest-writer.0.portRangeMin  = 22000                                                                                                <int>            [provided]
+[29605]: chans.from_mft-digit-digest_to_mft-digest-writer.0.rateLogging   = 60                                                                                                   <int>            [provided]
+[29606]: [WARN] Could not create GUI. Switching to batch mode. Do you have GLFW on your system?
+[29606]: [INFO] Spawing new device mft-digest-writer in process with pid 29606
+[29607]: [WARN] Could not create GUI. Switching to batch mode. Do you have GLFW on your system?
+[29607]: [INFO] Spawing new device dpl-global-binary-file-sink in process with pid 29607
+[29604]: chans.from_mft-digit-reader_to_dpl-global-binary-file-sink.0.rcvBufSize    = 1000                                                                                                 <int>            [provided]
+[29604]: chans.from_mft-digit-reader_to_dpl-global-binary-file-sink.0.rcvKernelSize = 0                                                                                                    <int>            [provided]
+[29604]: chans.from_mft-digit-reader_to_dpl-global-binary-file-sink.0.sndBufSize    = 1000                                                                                                 <int>            [provided]
+[29604]: chans.from_mft-digit-reader_to_dpl-global-binary-file-sink.0.sndKernelSize = 0                                                                                                    <int>            [provided]
+[29604]: chans.from_mft-digit-reader_to_dpl-global-binary-file-sink.0.transport     = default                                                                                              <string>         [provided]
+[29605]: chans.from_mft-digit-digest_to_mft-digest-writer.0.rcvBufSize    = 1000                                                                                                 <int>            [provided]
+[29605]: chans.from_mft-digit-digest_to_mft-digest-writer.0.rcvKernelSize = 0                                                                                                    <int>            [provided]
+[29605]: chans.from_mft-digit-digest_to_mft-digest-writer.0.sndBufSize    = 1000                                                                                                 <int>            [provided]
+[29605]: chans.from_mft-digit-digest_to_mft-digest-writer.0.sndKernelSize = 0                                                                                                    <int>            [provided]
+[29605]: chans.from_mft-digit-digest_to_mft-digest-writer.0.transport     = default                                                                                              <string>         [provided]
+[29606]: [14:04:47][INFO] Configuration: 
+[29606]: catch-signals                                                    = 1                                                                                                    <int>            [default] 
+[29606]: channel-config                                                   = name=from_mft-digit-digest_to_mft-digest-writer,type=pull,method=connect,address=tcp://127.0.0.1:22002,rateLogging=60   <vector<string>> [provided]
+[29607]: [14:04:47][INFO] Configuration: 
+[29607]: catch-signals                                                              = 1                                                                                                    <int>            [default] 
+[29607]: channel-config                                                             = name=from_mft-digit-reader_to_dpl-global-binary-file-sink,type=pull,method=connect,address=tcp://127.0.0.1:22001,rateLogging=60   <vector<string>> [provided]
+[29607]: chans.from_mft-digit-reader_to_dpl-global-binary-file-sink.0.address       = tcp://127.0.0.1:22001                                                                                <string>         [provided]
+[29607]: chaninfoLoggerD not available, falling back to stdout logging
+[29604]: chans.from_mft-digit-reader_to_dpl-global-binary-file-sink.0.type          = push                                                                                                 <string>         [provided]
+[29604]: chans.from_mft-digit-reader_to_dpl-global-binary-file-sink.numSockets      = 1                                                                                                    <int>            [provided]
+[29604]: chans.from_mft-digit-reader_to_mft-digit-digest.0.address                  = tcp://*:22000                                                                                        <string>         [provided]
+[29604]: chans.from_mft-digit-reader_to_mft-digit-digest.0.autoBind                 = 1                                                                                                    <bool>           [provided]
+[29604]: chans.from_mft-digit-reader_to_mft-digit-digest.0.linger                   = 500                                                                                                  <int>            [provided]
+[29605]: chans.from_mft-digit-digest_to_mft-digest-writer.0.type          = push                                                                                                 <string>         [provided]
+[29605]: chans.from_mft-digit-digest_to_mft-digest-writer.numSockets      = 1                                                                                                    <int>            [provided]
+[29605]: chans.from_mft-digit-reader_to_mft-digit-digest.0.address        = tcp://127.0.0.1:22000                                                                                <string>         [provided]
+[29605]: chans.from_mft-digit-reader_to_mft-digit-digest.0.autoBind       = 1                                                                                                    <bool>           [provided]
+[29605]: chans.from_mft-digit-reader_to_mft-digit-digest.0.linger         = 500                                                                                                  <int>            [provided]
+[29605]: chans.from_mft-digit-reader_to_mft-digit-digest.0.method         = connect                                                                                              <string>         [provided]
+[29606]: chans.from_mft-digit-digest_to_mft-digest-writer.0.address       = tcp://127.0.0.1:22002                                                                                <string>         [provided]
+[29606]: chans.from_mft-digit-digest_to_mft-digest-writer.0.autoBind      = 1                                                                                                    <bool>           [provided]
+[29606]: chans.from_mft-digit-digest_to_mft-digest-writer.0.linger        = 500                                                                                                  <int>            [provided]
+[29606]: chans.from_mft-digit-digest_to_mft-digest-writer.0.method        = connect                                                                                              <string>         [provided]
+[29606]: chans.from_mft-digit-digest_to_mft-digest-writer.0.portRangeMax  = 23000                                                                                                <int>            [provided]
+[29606]: chans.from_mft-digit-digest_to_mft-digest-writer.0.portRangeMin  = 22000                                                                                                <int>            [provided]
+[29606]: chans.from_mft-digit-diginfoLoggerD not available, falling back to stdout logging
+[29607]: s.from_mft-digit-reader_to_dpl-global-binary-file-sink.0.autoBind      = 1                                                                                                    <bool>           [provided]
+[29607]: chans.from_mft-digit-reader_to_dpl-global-binary-file-sink.0.linger        = 500                                                                                                  <int>            [provided]
+[29607]: chans.from_mft-digit-reader_to_dpl-global-binary-file-sink.0.method        = connect                                                                                              <string>         [provided]
+[29607]: chans.from_mft-digit-reader_to_dpl-global-binary-file-sink.0.portRangeMax  = 23000                                                                                                <int>            [provided]
+[29604]: chans.from_mft-digit-reader_to_mft-digit-digest.0.method                   = bind                                                                                                 <string>         [provided]
+[29604]: chans.from_mft-digit-reader_to_mft-digit-digest.0.portRangeMax             = 23000                                                                                                <int>            [provided]
+[29604]: chans.from_mft-digit-reader_to_mft-digit-digest.0.portRangeMin             = 22000                                                                                                <int>            [provided]
+[29604]: chans.from_mft-digit-reader_to_mft-digit-digest.0.rateLogging              = 60                                                                                                   <int>            [provided]
+[29604]: chans.from_mft-digit-reader_to_mft-digit-digest.0.rcvBufSize               = 1000                                                                                                 <int>            [provided]
+[29605]: chans.from_mft-digit-reader_to_mft-digit-digest.0.portRangeMax   = 23000                                                                                                <int>            [provided]
+[29605]: chans.from_mft-digit-reader_to_mft-digit-digest.0.portRangeMin   = 22000                                                                                                <int>            [provided]
+[29605]: chans.from_mft-digit-reader_to_mft-digit-digest.0.rateLogging    = 60                                                                                                   <int>            [provided]
+[29605]: chans.from_mft-digit-reader_to_mft-digit-digest.0.rcvBufSize     = 1000                                                                                                 <int>            [provided]
+[29605]: chans.from_mft-digit-reader_to_mft-digit-digest.0.rcvKernelSize  = 0                                                                                                    <int>            [provided]
+[29606]: est_to_mft-digest-writer.0.rateLogging   = 60                                                                                                   <int>            [provided]
+[29606]: chans.from_mft-digit-digest_to_mft-digest-writer.0.rcvBufSize    = 1000                                                                                                 <int>            [provided]
+[29606]: chans.from_mft-digit-digest_to_mft-digest-writer.0.rcvKernelSize = 0                                                                                                    <int>            [provided]
+[29606]: chans.from_mft-digit-digest_to_mft-digest-writer.0.sndBufSize    = 1000                                                                                                 <int>            [provided]
+[29606]: chans.from_mft-digit-digest_to_mft-digest-writer.0.sndKernelSize = 0                                                                                                    <int>            [provided]
+[29607]: chans.from_mft-digit-reader_to_dpl-global-binary-file-sink.0.portRangeMin  = 22000                                                                                                <int>            [provided]
+[29607]: chans.from_mft-digit-reader_to_dpl-global-binary-file-sink.0.rateLogging   = 60                                                                                                   <int>            [provided]
+[29607]: chans.from_mft-digit-reader_to_dpl-global-binary-file-sink.0.rcvBufSize    = 1000                                                                                                 <int>            [provided]
+[29607]: chans.from_mft-digit-reader_to_dpl-global-binary-file-sink.0.rcvKernelSize = 0                                                                                                    <int>            [provided]
+[29607]: chans.from_mft-digit-reader_to_dpl-global-binary-file-sink.0.sndBufSize    = 1000                                                                                                 <int>            [provided]
+[29604]: chans.from_mft-digit-reader_to_mft-digit-digest.0.rcvKernelSize            = 0                                                                                                    <int>            [provided]
+[29604]: chans.from_mft-digit-reader_to_mft-digit-digest.0.sndBufSize               = 1000                                                                                                 <int>            [provided]
+[29604]: chans.from_mft-digit-reader_to_mft-digit-digest.0.sndKernelSize            = 0                                                                                                    <int>            [provided]
+[29604]: chans.from_mft-digit-reader_to_mft-digit-digest.0.transport                = default                                                                                              <string>         [provided]
+[29604]: chans.from_mft-digit-reader_to_mft-digit-digest.0.type                     = push                                                                                                 <string>         [provided]
+[29605]: chans.from_mft-digit-reader_to_mft-digit-digest.0.sndBufSize     = 1000                                                                                                 <int>            [provided]
+[29605]: chans.from_mft-digit-reader_to_mft-digit-digest.0.sndKernelSize  = 0                                                                                                    <int>            [provided]
+[29605]: chans.from_mft-digit-reader_to_mft-digit-digest.0.transport      = default                                                                                              <string>         [provided]
+[29605]: chans.from_mft-digit-reader_to_mft-digit-digest.0.type           = pull                                                                                                 <string>         [provided]
+[29605]: chans.from_mft-digit-reader_to_mft-digit-digest.numSockets       = 1                                                                                                    <int>            [provided]
+[29606]: chans.from_mft-digit-digest_to_mft-digest-writer.0.transport     = default                                                                                              <string>         [provided]
+[29606]: chans.from_mft-digit-digest_to_mft-digest-writer.0.type          = pull                                                                                                 <string>         [provided]
+[29606]: chans.from_mft-digit-digest_to_mft-digest-writer.numSockets      = 1                                                                                                    <int>            [provided]
+[29606]: color                                                            = 0                                                                                                    <bool>           [provided]
+[29606]: control                                                          = static                                                                                               <string>         [provided]
+[29607]: chans.from_mft-digit-reader_to_dpl-global-binary-file-sink.0.sndKernelSize = 0                                                                                                    <int>            [provided]
+[29607]: chans.from_mft-digit-reader_to_dpl-global-binary-file-sink.0.transport     = default                                                                                              <string>         [provided]
+[29607]: chans.from_mft-digit-reader_to_dpl-global-binary-file-sink.0.type          = pull                                                                                                 <string>         [provided]
+[29607]: chans.from_mft-digit-reader_to_dpl-global-binary-file-sink.numSockets      = 1                                                                                                    <int>            [provided]
+[29607]: color                                                                      = 0                                                                                                    <bool>           [provided]
+[29604]: chans.from_mft-digit-reader_to_mft-digit-digest.numSockets                 = 1                                                                                                    <int>            [provided]
+[29604]: color                                                                      = 0                                                                                                    <bool>           [provided]
+[29604]: control                                                                    = static                                                                                               <string>         [provided]
+[29604]: id                                                                         = mft-digit-reader                                                                                     <string>         [provided]
+[29604]: infologger-mode                                                            =                                                                                                      <string>         [default] 
+[29605]: color                                                            = 0                                                                                                    <bool>           [provided]
+[29605]: control                                                          = static                                                                                               <string>         [provided]
+[29605]: id                                                               = mft-digit-digest                                                                                     <string>         [provided]
+[29605]: infologger-mode                                                  =                                                                                                      <string>         [default] 
+[29605]: infologger-severity                                              =                                                                                                      <string>         [default] 
+[29606]: id                                                               = mft-digest-writer                                                                                    <string>         [provided]
+[29606]: infologger-mode                                                  =                                                                                                      <string>         [default] 
+[29606]: infologger-severity                                              =                                                                                                      <string>         [default] 
+[29606]: initialization-timeout                                           = 120                                                                                                  <int>            [default] 
+[29606]: io-threads                                                       = 1                                                                                                    <int>            [default] 
+[29607]: control                                                                    = static                                                                                               <string>         [provided]
+[29607]: id                                                                         = dpl-global-binary-file-sink                                                                          <string>         [provided]
+[29607]: infologger-mode                                                            =                                                                                                      <string>         [default] 
+[29607]: infologger-severity                                                        =                                                                                                      <string>         [default] 
+[29607]: initialization-timeout                                                     = 120                                                                                                  <int>            [default] 
+[29604]: infologger-severity                                                        =                                                                                                      <string>         [default] 
+[29604]: initialization-timeout                                                     = 120                                                                                                  <int>            [default] 
+[29604]: io-threads                                                                 = 1                                                                                                    <int>            [default] 
+[29604]: log-to-file                                                                =                                                                                                      <string>         [default] 
+[29604]: mft-digit-infile                                                           = mftdigits.root                                                                                       <string>         [provided]
+[29605]: initialization-timeout                                           = 120                                                                                                  <int>            [default] 
+[29605]: io-threads                                                       = 1                                                                                                    <int>            [default] 
+[29605]: log-to-file                                                      =                                                                                                      <string>         [default] 
+[29605]: monitoring-backend                                               = infologger://                                                                                        <string>         [default] 
+[29605]: network-interface                                                = default                                                                                              <string>         [default] 
+[29606]: log-to-file                                                      =                                                                                                      <string>         [default] 
+[29606]: mft-digest-logfile                                               = mft_digest.log                                                                                       <string>         [provided]
+[29606]: mft-digest-outfile                                               = mft_digest.root                                                                                      <string>         [provided]
+[29606]: monitoring-backend                                               = infologger://                                                                                        <string>         [default] 
+[29606]: network-interface                                                = default                                                                                              <string>         [default] 
+[29606]: rate                                                             = 0                                                                                                    <float>          [default] 
+[29607]: io-threads                                                                 = 1                                                                                                    <int>            [default] 
+[29607]: keep                                                                       =                                                                                                      <string>         [provided]
+[29607]: log-to-file                                                                =                                                                                                      <string>         [default] 
+[29607]: monitoring-backend                                                         = infologger://                                                                                        <string>         [default] 
+[29607]: network-interface                                                          = default                                                                                              <string>         [default] 
+[29604]: monitoring-backend                                                         = infologger://                                                                                        <string>         [default] 
+[29604]: network-interface                                                          = default                                                                                              <string>         [default] 
+[29604]: rate                                                                       = 0                                                                                                    <float>          [default] 
+[29604]: session                                                                    = default                                                                                              <string>         [default] 
+[29605]: rate                                                             = 0                                                                                                    <float>          [default] 
+[29605]: session                                                          = default                                                                                              <string>         [default] 
+[29605]: severity                                                         = debug                                                                                                <string>         [default] 
+[29605]: shm-monitor                                                      = 1                                                                                                    <bool>           [default] 
+[29605]: shm-segment-size                                                 = 2000000000                                                                                           <std::size_t>    [default] 
+[29605]: transport                                                        = zeromq                                                                                               <string>         [default] 
+[29606]: session                                                          = default                                                                                              <string>         [default] 
+[29606]: severity                                                         = debug                                                                                                <string>         [default] 
+[29606]: shm-monitor                                                      = 1                                                                                                    <bool>           [default] 
+[29606]: shm-segment-size                                                 = 2000000000                                                                                           <std::size_t>    [default] 
+[29606]: transport                                                        = zeromq                                                                                               <string>         [default] 
+[29607]: outfile                                                                    = dpl-out.bin                                                                                          <string>         [provided]
+[29607]: rate                                                                       = 0                                                                                                    <float>          [default] 
+[29607]: session                                                                    = default                                                                                              <string>         [default] 
+[29607]: severity                                                                   = debug                                                                                                <string>         [default] 
+[29607]: shm-monitor                                                                = 1                                                                                                    <bool>           [default] 
+[29604]: severity                                                                   = debug                                                                                                <string>         [default] 
+[29604]: shm-monitor                                                                = 1                                                                                                    <bool>           [default] 
+[29604]: shm-segment-size                                                           = 2000000000                                                                                           <std::size_t>    [default] 
+[29604]: transport                                                                  = zeromq                                                                                               <string>         [default] 
+[29604]: verbosity                                                                  = medium                                                                                               <string>         [default] 
+[29604]: 
+[29604]: [14:04:47][INFO] 
+[29604]:       ______      _    _______  _________ 
+[29604]:      / ____/___ _(_)_______   |/  /_  __ \    version 1.3.8
+[29604]:     / /_  / __ `/ / ___/__  /|_/ /_  / / /    build RELWITHDEBINFO
+[29605]: verbosity                                                        = medium                                                                                               <string>         [default] 
+[29605]: 
+[29605]: [14:04:47][INFO] 
+[29605]:       ______      _    _______  _________ 
+[29605]:      / ____/___ _(_)_______   |/  /_  __ \    version 1.3.8
+[29605]:     / /_  / __ `/ / ___/__  /|_/ /_  / / /    build RELWITHDEBINFO
+[29605]:    / __/ / /_/ / / /    _  /  / / / /_/ /     https://github.com/FairRootGroup/FairMQ
+[29605]:   /_/    \__,_/_/_/     /_/  /_/  \___\_\     LGPL-3.0  © 2012-2018 GSI
+[29605]: 
+[29605]: 2019-03-01 14:04:47	[1;49mStdOut backend initialized[0m
+[29605]: 
+[29605]: [14:04:47][STATE] Starting FairMQ state machine
+[29605]: [14:04:47][STATE] Entering IDLE state
+[29606]: verbosity                                                        = medium                                                                                               <string>         [default] 
+[29606]: 
+[29606]: [14:04:47][INFO] 
+[29606]:       ______      _    _______  _________ 
+[29606]:      / ____/___ _(_)_______   |/  /_  __ \    version 1.3.8
+[29606]:     / /_  / __ `/ / ___/__  /|_/ /_  / / /    build RELWITHDEBINFO
+[29606]:    / __/ / /_/ / / /    _  /  / / / /_/ /     https://github.com/FairRootGroup/FairMQ
+[29606]:   /_/    \__,_/_/_/     /_/  /_/  \___\_\     LGPL-3.0  © 2012-2018 GSI
+[29606]: 
+[29606]: 2019-03-01 14:04:47	[1;49mStdOut backend initialized[0m
+[29606]: 
+[29606]: [14:04:47][STATE] Starting FairMQ state machine
+[29606]: [14:04:47][STATE] Entering IDLE state
+[29607]: shm-segment-size                                                           = 2000000000                                                                                           <std::size_t>    [default] 
+[29607]: transport                                                                  = zeromq                                                                                               <string>         [default] 
+[29607]: verbosity                                                                  = medium                                                                                               <string>         [default] 
+[29607]: 
+[29607]: [14:04:47][INFO] 
+[29607]:       ______      _    _______  _________ 
+[29607]:      / ____/___ _(_)_______   |/  /_  __ \    version 1.3.8
+[29607]:     / /_  / __ `/ / ___/__  /|_/ /_  / / /    build RELWITHDEBINFO
+[29607]:    / __/ / /_/ / / /    _  /  / / / /_/ /     https://github.com/FairRootGroup/FairMQ
+[29607]:   /_/    \__,_/_/_/     /_/  /_/  \___\_\     LGPL-3.0  © 2012-2018 GSI
+[29607]: 
+[29607]: 2019-03-01 14:04:47	[1;49mStdOut backend initialized[0m
+[29607]: 
+[29607]: [14:04:47][STATE] Starting FairMQ state machine
+[29607]: [14:04:47][STATE] Entering IDLE state
+[29604]:    / __/ / /_/ / / /    _  /  / / / /_/ /     https://github.com/FairRootGroup/FairMQ
+[29604]:   /_/    \__,_/_/_/     /_/  /_/  \___\_\     LGPL-3.0  © 2012-2018 GSI
+[29604]: 
+[29604]: 2019-03-01 14:04:47	[1;49mStdOut backend initialized[0m
+[29604]: 
+[29604]: [14:04:47][STATE] Starting FairMQ state machine
+[29604]: [14:04:47][STATE] Entering IDLE state
+[29604]: [14:04:47][STATE] Entering INITIALIZING_DEVICE state
+[29604]: 
+[29605]: [14:04:47][STATE] Entering INITIALIZING_DEVICE state
+[29606]: [14:04:47][STATE] Entering INITIALIZING_DEVICE state
+[29605]: 2019-03-01 14:04:47	[1;49mBuffering enabled (100)[0m
+[29605]: [14:04:47][STATE] Entering DEVICE_READY state
+[29605]: [14:04:47][STATE] Entering INITIALIZING_TASK state
+[29605]: [14:04:47][STATE] Entering READY state
+[29605]: [14:04:47][STATE] Entering RUNNING state
+[29605]: [14:04:47][INFO] DEVICE: Running...
+[29607]: [14:04:47][STATE] Entering INITIALIZING_DEVICE state
+[29607]: 2019-03-01 14:04:47	[1;49mBuffering enabled (100)[0m
+[29607]: [14:04:47][STATE] Entering DEVICE_READY state
+[29607]: [14:04:47][STATE] Entering INITIALIZING_TASK state
+[29607]: [14:04:47][STATE] Entering READY state
+[29607]: [14:04:47][STATE] Entering RUNNING state
+[29607]: [14:04:47][INFO] DEVICE: Running...
+[29606]: 2019-03-01 14:04:47	[1;49mBuffering enabled (100)[0m
+[29606]: [14:04:47][INFO] Open the log file mft_digest.log
+[29606]: [14:04:47][STATE] Entering DEVICE_READY state
+[29606]: [14:04:47][STATE] Entering INITIALIZING_TASK state
+[29606]: [14:04:47][STATE] Entering READY state
+[29606]: [14:04:47][STATE] Entering RUNNING state
+[29606]: [14:04:47][INFO] DEVICE: Running...
+[29604]: 2019-03-01 14:04:47	[1;49mBuffering enabled (100)[0m
+[29604]: [14:04:47][STATE] Entering DEVICE_READY state
+[29604]: [14:04:47][STATE] Entering INITIALIZING_TASK state
+[29604]: [14:04:47][STATE] Entering READY state
+[29604]: [14:04:47][STATE] Entering RUNNING state
+[29604]: [14:04:47][INFO] DEVICE: Running...
+[29604]: [14:04:47][INFO] MFTDigitReader pushed 1446 digits, in 26 RO frames and 10 MC events
+[29607]: [14:04:47][INFO] No dangling output to be dumped.
+[INFO] Quitting
+[INFO] QUIT_REQUESTED
+
+[29606]: [14:04:47][INFO] DigitDigest: inputCount = 1 digitsCount = 1446
+[29604]: [14:04:48][INFO] Received device shutdown request (signal 15).
+[29604]: [14:04:48][INFO] Waiting for graceful device shutdown. Hit Ctrl-C again to abort immediately.
+[29605]: [14:04:48][INFO] Received device shutdown request (signal 15).
+[29605]: [14:04:48][INFO] Waiting for graceful device shutdown. Hit Ctrl-C again to abort immediately.
+[29607]: [14:04:48][INFO] Received device shutdown request (signal 15).
+[29607]: [14:04:48][INFO] Waiting for graceful device shutdown. Hit Ctrl-C again to abort immediately.
+[29606]: [14:04:48][INFO] Received device shutdown request (signal 15).
+[29606]: [14:04:48][INFO] Waiting for graceful device shutdown. Hit Ctrl-C again to abort immediately.
+[29607]: [14:04:48][STATE] Entering READY state
+[29607]: [14:04:48][STATE] Entering RESETTING_TASK state
+[29607]: [14:04:48][STATE] Entering DEVICE_READY state
+[29607]: [14:04:48][STATE] Entering RESETTING_DEVICE state
+[29607]: [14:04:48][STATE] Entering IDLE state
+[29607]: [14:04:48][STATE] Entering EXITING state
+[29607]: [14:04:48][STATE] Exiting FairMQ state machine
+[29607]: [14:04:48][INFO] Process 29607 is exiting.
+[29605]: [14:04:48][STATE] Entering READY state
+[29605]: [14:04:48][STATE] Entering RESETTING_TASK state
+[29605]: [14:04:48][STATE] Entering DEVICE_READY state
+[29605]: [14:04:48][STATE] Entering RESETTING_DEVICE state
+[29605]: [14:04:48][STATE] Entering IDLE state
+[29605]: [14:04:48][STATE] Entering EXITING state
+[29605]: [14:04:48][STATE] Exiting FairMQ state machine
+[29605]: [14:04:48][INFO] Process 29605 is exiting.
+[29604]: [14:04:48][STATE] Entering READY state
+[29604]: [14:04:48][STATE] Entering RESETTING_TASK state
+[29604]: [14:04:48][STATE] Entering DEVICE_READY state
+[29604]: [14:04:48][STATE] Entering RESETTING_DEVICE state
+[29604]: [14:04:48][STATE] Entering IDLE state
+[29604]: [14:04:48][STATE] Entering EXITING state
+[29606]: [14:04:48][STATE] Entering READY state
+[29606]: [14:04:48][STATE] Entering RESETTING_TASK state
+[29604]: [14:04:48][STATE] Exiting FairMQ state machine
+[29604]: [14:04:48][INFO] Process 29604 is exiting.
+[29606]: [14:04:48][STATE] Entering DEVICE_READY state
+[29606]: [14:04:48][STATE] Entering RESETTING_DEVICE state
+[29606]: [14:04:48][STATE] Entering IDLE state
+[29606]: [14:04:48][STATE] Entering EXITING state
+[29606]: [14:04:48][STATE] Exiting FairMQ state machine
+[29606]: [14:04:48][INFO] Process 29606 is exiting.
+[INFO] Process 29602 is exiting.

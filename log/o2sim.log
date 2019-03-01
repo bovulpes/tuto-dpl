@@ -1,0 +1,154 @@
+[INFO] RNG INITIAL SEED 1906061950
+[WARN] FairRun::SetOutputFile() deprecated. Use FairRootFileSink.
+[INFO] Media file used: /home/alidock/.sw/slc7_x86-64/O2/dpl-1/share/Detectors/Geometry/media.geo
+[INFO] MagneticField::CreateField: Maximim possible beam energy for requested beam is assumed
+[INFO] MagneticField::Print: Maps:
+[INFO] MagneticField::Print: Solenoid (-1*)5 kG, Dipole ON (-1) 
+[INFO] MagneticField::Print: Machine B fields for p-p  beam (7000 GeV): QGrad: 22.0002 Dipole: 37.8781
+[INFO] MagneticField::Print: Uses Sol30_Dip6_Hole  of $(O2_ROOT)/share/Common/maps/mfchebKGI_sym.root
+[INFO] Activating MFT module
+[INFO] Init box forward muons generator
+[INFO] FairRootFileSink initialized.
+[INFO]  - cbmroot
+[INFO]     - o2sim.root
+[INFO] ==============  FairRunSim: Initialising simulation run ==============
+[INFO] FairGeoMedia: Read media 
+
+************************************************************* 
+     initialisation for run id 1551430866
+************************************************************* 
+[INFO] MagFieldContFact::createContainer: Creating mag.field container MagFieldParam
+[INFO] Setting up G3 sim from library code 
+
+ MZSTOR.  ZEBRA table base TAB(0) in /MZCC/ at adr   699941711    29B8434F HEX
+
+ MZSTOR.  Initialize Store  0  in /GCBANK/
+          with Store/Table at absolute adrs   694496061   699941711
+                                        HEX    29652B3D    29B8434F
+                                        HEX    FFACE5DA           0
+                              relative adrs    -5446182           0
+          with     1 Str. in     2 Links in   5300 Low words in 4999970 words.
+          This store has a fence of   16 words.
+
+ MZLOGL.  Set Log Level 0 for store  0
+1*****  GEANT Version  3.21/11 Released on 100298
+0*****  Correction Cradle Version  0.1100
+
+ MZDIV.   Initialize Division  Constant  in Store  0
+          NW/NWMAX=   20004000000,  MODE/KIND=  1  2
+          Division 20 initialized.
+
+ MZLINK.  Initialize Link Area  /GCLINK/  for Store  0 NL/NS=    20    20
+
+ MZLINK.  Initialize Link Area  /GCSLNK/  for Store  0 NL/NS=   100   100
+-I- G3Config: Geant3 with TGeo has been created.
+SetCuts Macro: Setting Processes..
+[INFO] Set default settings for processes and cuts.
+[INFO] Special process settings are enabled.
+[INFO] Special cut settings are enabled.
+[INFO] Initialising primary generator
+[INFO] Setting interaction diamond: position = {0,0,0} cm
+[INFO] Setting interaction diamond: width = {0,0,0} cm
+[INFO] Setting up CAVE without ZDC
+[INFO] GeometryBuilder::buildGeometry volume name = MFT
+Creating MFT heat exchanger for disk0 bottom
+Creating MFT heat exchanger for disk1 bottom
+Creating MFT heat exchanger for disk2 bottom
+Creating MFT heat exchanger for disk3 bottom
+Creating MFT heat exchanger for disk4 bottom
+Creating MFT heat exchanger for disk0 top
+Creating MFT heat exchanger for disk1 top
+Creating MFT heat exchanger for disk2 top
+Creating MFT heat exchanger for disk3 top
+Creating MFT heat exchanger for disk4 top
+[INFO] TGeometry will not be imported to VMC
+
+[INFO] FairMCApplication::InitGeometry: 0
+[INFO] Simulation RunID: 1551430866
+[INFO] CREATING BRANCH IndexedTrackRefs
+[INFO] Creating branch for IndexedTrackRefs with address 0x6f9d418
+[INFO] CREATING BRANCH MCTrack
+[INFO] Creating branch for MCTrack with address 0x6f9d380
+[INFO] CREATING BRANCH MFTHit
+[INFO] Creating branch for MFTHit with address 0x6791a90
+[INFO] CREATING BRANCH TrackRefs
+[INFO] Creating branch for TrackRefs with address 0x6f9d410
+
+ Calculating cross section tables, see gphysi.dat for more information
+
+ Cross section calculation concluded successfully
+[INFO] Monte Carlo Engine Initialisation with: TGeant3TGeo
+[WARN] Alignable volumes are not yet defined for MFT 
+[INFO] ***  FairBaseParSet written to ROOT file   version: 1
+[INFO] ***  FairGeoParSet written to ROOT file   version: 1
+[INFO] ***  MagFieldParam written to ROOT file   version: 1
+--------------------------------------------------------------------------------
+--------------  actual containers in runtime database  -------------------------
+FairBaseParSet                                 class for parameter io
+FairGeoParSet                                  class for Geo parameter
+MagFieldParam                                  Mag. Field Parameters
+--------------  runs, versions  ------------------------------------------------
+run id
+  container                                        1st-inp    2nd-inp    output
+run: 1551430866
+  FairBaseParSet                                1551430866         -1          1
+  FairGeoParSet                                 1551430866         -1          1
+  MagFieldParam                                         -1         -1          1
+--------------  input/output  --------------------------------------------------
+first input: none
+second input: none
+output:
+OBJ: FairParRootFile	o2sim_par.root	 : 0 at: 0xa8593a0
+Root file I/O o2sim_par.root is open
+detector I/Os:  FairGenericParIo
+Run: 1551430866
+Fill:      0
+Period: 
+LHC State: 
+Start: Fri Mar  1 09:01:08 2019
+End  : Fri Mar  1 09:01:09 2019
+Beam0: Z:A =   0:  0, Energy = 0.000
+Beam1: Z:A =   0:  0, Energy = 0.000
+sqrt[s]    = 0.000
+crossing angle (radian) = 0.000000e+00
+magnet currents (A) L3 = 0.000, Dipole = 0
+Detectors: Cont.RO Triggers
+      MFT:    -       -    
+VMC: 0x6f98060
+[INFO] Init: Real time 2.72697 s, CPU time 2.15s
+[INFO] Init: Memory used 352.918 MB
+ **** GTRIGI: IEVENT=      1 IDEVT=      1 Random Seeds = 1906061950           0
+[INFO] Stack: 1 out of 1 stored 
+
+[INFO] Found nonconforming detector CAVE 
+ **** GTRIGI: IEVENT=      2 IDEVT=      2 Random Seeds = 1906061950           0
+[INFO] Stack: 1 out of 1 stored 
+
+ **** GTRIGI: IEVENT=      3 IDEVT=      3 Random Seeds = 1906061950           0
+[INFO] Stack: 1 out of 1 stored 
+
+ **** GTRIGI: IEVENT=      4 IDEVT=      4 Random Seeds = 1906061950           0
+[INFO] Stack: 1 out of 1 stored 
+
+ **** GTRIGI: IEVENT=      5 IDEVT=      5 Random Seeds = 1906061950           0
+[INFO] Stack: 1 out of 1 stored 
+
+ **** GTRIGI: IEVENT=      6 IDEVT=      6 Random Seeds = 1906061950           0
+[INFO] Stack: 1 out of 1 stored 
+
+ **** GTRIGI: IEVENT=      7 IDEVT=      7 Random Seeds = 1906061950           0
+[INFO] Stack: 1 out of 1 stored 
+
+ **** GTRIGI: IEVENT=      8 IDEVT=      8 Random Seeds = 1906061950           0
+[INFO] Stack: 1 out of 1 stored 
+
+ **** GTRIGI: IEVENT=      9 IDEVT=      9 Random Seeds = 1906061950           0
+[INFO] Stack: 1 out of 1 stored 
+
+ **** GTRIGI: IEVENT=     10 IDEVT=     10 Random Seeds = 1906061950           0
+[INFO] Stack: 1 out of 1 stored 
+
+[INFO] Macro finished succesfully.
+[INFO] Real time 0.084116 s, CPU time 0.03s
+[INFO] Memory used 352.918 MB
+[INFO] Simulation process took 7.5989 s
