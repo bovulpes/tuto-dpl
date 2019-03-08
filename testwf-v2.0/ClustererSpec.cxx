@@ -43,7 +43,8 @@ void ClustererDPL::init(InitContext& ic)
 
   mClusterer = std::make_unique<o2::ITSMFT::Clusterer>();
   mClusterer->setGeometry(geom);
-  mClusterer->setNChips(o2::ITSMFT::ChipMappingMFT::getNChips());
+  //mClusterer->setNChips(o2::ITSMFT::ChipMappingMFT::getNChips()); // FIXME !
+  mClusterer->setNChips(geom->getNumberOfChips());
 
   //mClusterer->setMaskOverflowPixels(false);
 
